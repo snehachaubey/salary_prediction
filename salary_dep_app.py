@@ -7,10 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1lDWIl__B9xCghFlgfiuuFT24bTBuLqGE
 """
 
+import joblib
 import streamlit as st
 import pandas as pd
-import joblib
-
 model = joblib.load("model.pkl")
 encoders = joblib.load("label_encoders_sp.pkl")
 
